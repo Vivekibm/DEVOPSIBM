@@ -50,7 +50,7 @@
 <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath"/>
 
 <target name="pmd">
-    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" />
+    
     <pmd rulesetfiles="Rules/Apex Rules.xml">
         <formatter type="xml" toFile="pmd_report.xml"/>
         <fileset dir="src">
