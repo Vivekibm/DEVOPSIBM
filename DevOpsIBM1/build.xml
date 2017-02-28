@@ -43,7 +43,7 @@
 	</target>
 
 <path id="pmd.classpath">
-<fileset dir="/lib/">
+<fileset dir="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\lib">
  <include name="**/*.jar"/>
  </fileset>
  </path>
@@ -51,8 +51,8 @@
 
 <target name="pmd">
     
-    <pmd rulesetfiles="Rules/Apex Rules.xml">
-        <formatter type="xml" toFile="pmd_report.xml"/>
+    <pmd rulesetfiles="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\Rules\Apex Rules.xml">
+        <formatter type="xml" toFile="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\pmd_report.xml"/>
         <fileset dir="src">
             <include name="**/*.cls"/>
         </fileset>
