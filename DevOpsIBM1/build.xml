@@ -43,14 +43,21 @@
     </target>
 	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
 
+<path id="pmd.classpath">
+<fileset dir="C:/Users/IBM_ADMIN/Desktop/pmd-bin-5.5.4/pmd-bin-5.5.4">
+ <include name="**/*.jar"/>
+ </fileset>
+ </path>
+<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="pmd.classpath"/>
+
 <target name="pmd">
-    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="C:/Program Files (x86)/Jenkins/plugins/pmd/WEB-INF/lib/pmd-core-5.2.3.jar"/>
+    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" />
     <pmd rulesetfiles="rulesets/apex/ruleset.xml">
         <formatter type="xml" toFile="c:/pmd_report.xml"/>
         <fileset dir="C:/Program Files (x86)/Jenkins/workspace/Sample/DevOpsIBM1/src/classes">
             <include name="**/*.cls"/>
         </fileset>
     </pmd>
-</target> 
+</target>  
 	
 </project>
