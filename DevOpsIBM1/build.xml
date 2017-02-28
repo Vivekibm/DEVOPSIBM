@@ -53,7 +53,7 @@
     
     <pmd rulesetfiles="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\Rules\Apex Rules.xml">
         <formatter type="xml" toFile="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\pmd_report.xml"/>
-        <fileset dir="src">
+        <fileset dir="C:\Users\IBM_ADMIN\.jenkins\workspace\Salesforce_Garage\DevOpsIBM1\src">
             <include name="**/*.cls"/>
         </fileset>
     </pmd>
