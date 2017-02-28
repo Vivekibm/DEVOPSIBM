@@ -41,6 +41,16 @@
       <sf:deploy username="${sf.username}" password="${sf.password}"  serverurl="${sf.serverurl}" deployRoot="src" >
       </sf:deploy>
     </target>
-	
+	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+
+<target name="pmd">
+    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+    <pmd rulesetfiles="rulesets/apex/ruleset.xml">
+        <formatter type="xml" toFile="c:/pmd_report.xml"/>
+        <fileset dir="C:/Program Files (x86)/Jenkins/workspace/Sample/DevOpsIBM1/src/classes">
+            <include name="**/*.cls"/>
+        </fileset>
+    </pmd>
+</target> 
 	
 </project>
