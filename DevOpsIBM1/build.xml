@@ -40,8 +40,7 @@
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
       <sf:deploy username="${sf.username}" password="${sf.password}"  serverurl="${sf.serverurl}" deployRoot="src" >
       </sf:deploy>
-    </target>
-	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
+	</target>
 
 <path id="pmd.classpath">
 <fileset dir="C:/Users/IBM_ADMIN/Desktop/pmd-bin-5.5.4/pmd-bin-5.5.4">
