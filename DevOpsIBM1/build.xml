@@ -44,7 +44,7 @@
 	<taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask"/>
 
 <target name="pmd">
-    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="C:\Program Files (x86)\Jenkins\plugins\pmd\WEB-INF\lib\pmd.jar"/>
+    <taskdef name="pmd" classname="net.sourceforge.pmd.ant.PMDTask" classpathref="C:/Program Files (x86)/Jenkins/plugins/pmd/WEB-INF/lib/pmd-core-5.2.3.jar"/>
     <pmd rulesetfiles="rulesets/apex/ruleset.xml">
         <formatter type="xml" toFile="c:/pmd_report.xml"/>
         <fileset dir="C:/Program Files (x86)/Jenkins/workspace/Sample/DevOpsIBM1/src/classes">
